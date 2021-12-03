@@ -1,0 +1,29 @@
+<nav [ngClass]="'navbar navbar-light bg-light'+ nadvarColor">
+    <div class="container-fluid">
+        <div class="container-sm grid">
+            <!--marca-->
+        <section class="g-col-">
+            <a class="navbar-brand" href="#">
+                <img src="../../../assets/img/nadvar/guitar-pick.ico" alt="logo guitarras" width="auto" height="50em"
+                    class="d-inline-block align-text-top">
+                Bootstrap
+            </a>
+        </section>
+        <!--links-->
+        <section>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" routerLink=""
+                        (click)="navbarColorClaro(true)">Home</a>
+                    <a class="nav-link" routerLink="dashboard" (click)="navbarColorClaro(false)">DashBoard</a>
+                    <a class="nav-link" routerLink="**">Pricing</a>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+</nav>
