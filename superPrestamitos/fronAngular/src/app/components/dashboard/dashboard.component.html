@@ -1,50 +1,58 @@
 <main>
-    <section class="container d-flex gap-3">
-        <article class="">
-            <img src="../../../assets/img/dashboard//money (1).ico" alt="">
-        </article>
-        <article>
-            <div class="card">
-                <form class="card-body">
-                    <fieldset>
-                        <legend>Formulario de prestamo</legend>
-                        <div class="row row-cols-3">
-                            <div class="mb-3">
-                                <label for="disabledTextInput" class="form-label">Nombre Completo</label>
-                                <input type="text" id="disabledTextInput" class="form-control"
-                                    placeholder="Nombre Apellidos">
+    <section class="container d-flex p-3">
+        <div class="card  container">
+            <div class="row g-20">
+                <div class="col-md-2">
+                    <img src="../../../assets/img/dashboard//money (1).ico" class="mx-auto d-block" width="100%"
+                        alt="...">
+                </div>
+                <div class="col-md-10">
+                    <form class="card-body">
+                        <fieldset>
+                            <legend>Formulario de prestamo</legend>
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                                <div class="col mb-3">
+                                    <label for="disabledTextInput" class="form-label">Nombre Completo</label>
+                                    <input type="text" id="disabledTextInput" class="form-control"
+                                        placeholder="Nombre Apellidos">
+                                </div>
+                                <div class="col mb-3">
+                                    <label for="disabledTextInput" class="form-label">Identificación</label>
+                                    <input type="text" id="disabledTextInput" class="form-control"
+                                        placeholder="000000000000">
+                                </div>
+                                <div class="col mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Correo</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
+                                </div>
+                                <div class="col mb-3">
+                                    <label for="exampleDataList" class="form-label">Status laboral</label>
+                                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                        placeholder="Seleccione uno">
+                                    <datalist id="datalistOptions">
+                                        <option value="Empleado">
+                                        <option value="Desempleado">
+                                        <option value="Independiente">
+                                    </datalist>
+                                </div>
+                                <div class="col mb-3">
+                                    <label for="disabledTextInput" class="form-label">Salario</label>
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                                </div>
+                                <div class="col mb-3">
+                                    <label for="disabledTextInput" class="form-label">Antiguedad en el trabajo
+                                        actual</label>
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="meses">
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class=" btn btn-dark d-md-block">Consultar</button>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="disabledTextInput" class="form-label">Identificación</label>
-                                <input type="text" id="disabledTextInput" class="form-control"
-                                    placeholder="000000000000">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="name@example.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="disabledSelect" class="form-label">Estatus Laboral</label>
-                                <select id="disabledSelect" class="form-select">
-                                    <option>Disabled select</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="disabledTextInput" class="form-label">Salario</label>
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="disabledTextInput" class="form-label">Antiguedad en el trabajo
-                                    actual</label>
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="meses">
-                            </div>
-                            <button type="submit" class=" btn btn-primary text-wrap">Enviar</button>
-                        </div>
-                    </fieldset>
-                </form>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
-        </article>
-
+        </div>
     </section>
 </main>
