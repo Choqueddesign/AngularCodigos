@@ -17,7 +17,7 @@ export class NadvarComponent implements OnInit {
   }
 
   navbarColorClaro(route: boolean):void{
-    route? this.nadvarColor = "nadvar-ligth bg-light":this.nadvarColor="nadvar-dark bg-dark"
+    route? this.nadvarColor = "nadvar-ligth bg-light":this.nadvarColor="nadvar-dark bg-light"
   }
 
 }

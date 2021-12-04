@@ -8,19 +8,16 @@ import { GuitarService } from 'src/app/services/guitar.service';
 })
 export class DashboardComponent implements OnInit {
 
-  allGuitars: any;
+  allGuitars: any
 
-  constructor(private guitarService:GuitarService) { }
+  constructor(private guitarService: GuitarService) { 
+  }
 
   ngOnInit(): void {
-    //this.guitarService.getAllGuitars().subscribe(this.guardarGuitarrasHttp)    
+    this.allGuitars = []
     this.guitarService.getAllGuitars().subscribe((guitars)=>{
-      this.allGuitars = guitars;
+      this.allGuitars = guitars
     })
-
-    /*guardarGuitarrasHttp(guitarras: any){
-      console.log()
-    }*/
-
   }
+
 }

@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { VoidComponent } from './components/void/void.component';
+import { FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { VoidComponent } from './components/void/void.component';
     DashboardComponent,
     FooterComponent,
     HomeComponent,
-    VoidComponent
+    VoidComponent,
   ],
   imports: [
     BrowserModule,
